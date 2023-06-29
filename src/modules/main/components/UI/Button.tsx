@@ -7,7 +7,7 @@ interface buttonProps{
 }
 const Button: FC<buttonProps> = ({width, height, children}) => {
   return (
-    <button style={{width, height}} className="bg-[#466BE1] rounded-[10px]">{children}</button>
+    <button style={{width, height}} className="bg-[#466BE1] rounded-[10px] max-fh:!w-[300px]">{children}</button>
   )
 }
 

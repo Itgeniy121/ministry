@@ -4,6 +4,8 @@ import AuthPage from "../../../pages/AuthPage"
 import RegistrationPage from "../../../pages/RegistrationPage"
 import CompaniesPage from "../../../pages/CompaniesPage"
 import AboutCompany from "../../../pages/AboutCompany"
+import Moderation from "../../mideration/Moderation"
+import { NotificationsPage } from "../../../pages/NotificationsPage"
 const Router = () => {
   return (
     <Routes>
@@ -12,6 +14,9 @@ const Router = () => {
         <Route path="/registr" element={<RegistrationPage/>}></Route>
         <Route path="/companies" element={<CompaniesPage/>}></Route>
         <Route path="/company" element={<AboutCompany/>}></Route>
+        <Route path="/moderation" element={<Moderation/>}></Route>
+        <Route path="/notifications" element={<NotificationsPage/>}></Route>
+
     </Routes>
   )
 }

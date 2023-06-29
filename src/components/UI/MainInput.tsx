@@ -7,7 +7,7 @@ interface inputProps{
 }
 const MainInput: FC<inputProps> = ({width, height, placehplder}) => {
   return (
-    <input style={{width, height}} className="bg-[#F2F2F2] rounded-[10px] pl-[31px] inpt mb-[24px]" placeholder={placehplder}></input>
+    <input style={{width, height}} className="bg-[#F2F2F2] rounded-[10px] pl-[31px] inpt mb-[24px] max-fh:!w-[300px]" placeholder={placehplder}></input>
   )
 }
 

@@ -38,6 +38,22 @@
 .my_shadow{
   box-shadow: 5px 6px rgba(62, 72, 118, 0.04);
 }
+.active{
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+}
+.area{
+  resize: none;
+}
+.area::placeholder{
+  font-family: 'Golos Text', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: black;
+  line-height: 136%;
+}
 .h1-18-600-inter{
   font-family: 'Inter', sans-serif;
   font-size: 18px;
@@ -68,15 +84,22 @@
 }
 .h1-17-400-golos{
   font-family: 'Golos Text', sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
   color: black;
   line-height: 136%;
 }
 .h1-18-400-golos{
   font-family: 'Golos Text', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
+  color: black;
+  line-height: 19px;
+}
+.h1-18-600-golos{
+  font-family: 'Golos Text', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
   color: black;
   line-height: 19px;
 }
@@ -98,6 +121,13 @@
   font-family: 'Golos Text', sans-serif;
   font-size: 24px;
   font-weight: 600;
+  color: black;
+  line-height: 120%;
+}
+.h1-25-400-golos{
+  font-family: 'Golos Text', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
   color: black;
   line-height: 120%;
 }
@@ -151,6 +181,13 @@
   line-height: 111%;
 }
 .h1-76-900-golos{
+  font-family: 'Golos Text', sans-serif;
+  font-size: 76px;
+  font-weight: 900;
+  color: black;
+  line-height: 84px;
+}
+.h1-76-400-golos{
   font-family: 'Golos Text', sans-serif;
   font-size: 76px;
   font-weight: 400;
