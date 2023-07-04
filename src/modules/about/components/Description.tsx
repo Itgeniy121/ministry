@@ -1,6 +1,11 @@
 import logopt from "../static/logopt.svg"
 import MainButton from "../../../components/UI/MainButton"
 const Description = () => {
+    const openModal = () =>{
+        let modalWindow = document.getElementById('modal3')
+        modalWindow?.classList.add('active')
+    }
+
   return (
     <div className="flex flex-row justify-between w-full pr-[78px] h-[290px] mt-[25px]">
         <div className="mt-[-60px] ml-[35px] absolute">
@@ -15,7 +20,7 @@ const Description = () => {
                     <p className="h1-17-400-golos !text-[#F138C0]">Корпоративные решения</p>
                 </div>
                 <div className="mt-[20px]">
-                <MainButton width="261px" height="87px"><p className="h1-32-400-golos !text-white">Связаться</p></MainButton>
+                <MainButton width="261px" height="87px"><p className="h1-32-400-golos !text-white" onClick={openModal}>Связаться</p></MainButton>
                 </div>
             </div>
             <div className="flex flex-row justify-between items-start mr-[120px]">

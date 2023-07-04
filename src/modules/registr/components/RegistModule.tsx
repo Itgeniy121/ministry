@@ -2,8 +2,14 @@ import banner from "../static/banner.png"
 import logo from "../../../assets/logo.svg"
 import MainInput from "../../../components/UI/MainInput"
 import MainButton from "../../../components/UI/MainButton"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
+
 const RegistrModule = () => {
+    const navigate = useNavigate()
+    const routeOnModeration = () =>{
+        navigate('/moderation')
+    }
+
   return (
     <div className="flex flex-row justify-start items-start w-full h-full">
     <img src={banner} alt="banner" className="w-[352px] h-[100vh] max-l:hidden"/>
@@ -18,7 +24,7 @@ const RegistrModule = () => {
             <MainInput width="610px" height="59px" placehplder="Email"/>
             <MainInput width="610px" height="59px" placehplder="Пароль"/>
             <MainInput width="610px" height="59px" placehplder="Повторите пароль"/>
-            <MainButton width="610px" height="59px"><p className="h1-30-400-golos !text-white max-fh:text-[20px]">Зарегестрироваться</p></MainButton>
+            <MainButton width="610px" height="59px" onClick={routeOnModeration}><p className="h1-30-400-golos !text-white max-fh:text-[20px]">Зарегестрироваться</p></MainButton>
             <div className="flex flex-row mt-[37px] justify-between">
                 <p className="h1-17-400-golos mr-[5px]">Уже есть аккакнт?</p>
                 <Link to="/auth" className="h1-17-400-golos !text-[#0064DC]">Войти</Link>

@@ -8,6 +8,10 @@ const Header = () => {
   const routeOnMain = () =>{
     navigate('/')
   }
+  const openModal = () =>{
+    let modalWindow = document.getElementById('modal2')
+    modalWindow?.classList.add('active')
+}
 
   return (
     <div className="w-full h-[122px] flex flex-row justify-between items-center max-s:flex-col max-s:items-start">
@@ -19,7 +23,7 @@ const Header = () => {
             <Link to="/companies" className="h1-16-400-golos max-xlfooter:text-[12px]">Компании</Link>
             <p className="h1-16-400-golos max-xlfooter:text-[12px]">Специалисты</p>
             <Link to="/notifications" className="h1-16-400-golos max-xlfooter:text-[12px]">Уведомления (1)</Link>
-            <p className="h1-16-400-golos max-xlfooter:text-[12px]">Добавить вид деятельности</p>
+            <p className="h1-16-400-golos max-xlfooter:text-[12px] cursor-pointer" onClick={openModal}>Добавить вид деятельности</p>
           </div>
         </div>
         <div className="mr-[57px] flex flex-row items-center max-conf:mr-[20px] max-s:pl-[20px] max-s:mt-[15px]">

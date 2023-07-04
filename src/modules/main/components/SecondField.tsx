@@ -10,7 +10,7 @@ const SecondField = () => {
         </div>
         <div className="flex flex-col justify-between w-[485px] mt-[109px] max-hs:w-[200px] max-apple:h-[30px] max-apple:mt-[60px]">
             <p className="h1-17-400-golos max-hs:text-[12px]">Реализованно проектами за все время Оренбургскими компаниями:</p>
-            <h1 className="!text-[#466BE1] h1-76-900-golos font-[400] text-[116px] max-hs:text-[40px]">170+</h1>
+            <h1 className="!text-[#466BE1] h1-76-900-golos !font-[400] !text-[116px] max-hs:text-[40px] mt-[15px]">170+</h1>
         </div>
     </div>
   )

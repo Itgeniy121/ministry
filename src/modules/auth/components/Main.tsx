@@ -2,8 +2,13 @@ import banner from "../static/banner.png"
 import logo from "../static/logo.svg"
 import MainInput from "../../../components/UI/MainInput"
 import MainButton from "../../../components/UI/MainButton"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 const Main = () => {
+const navigation = useNavigate()
+const routeOnModeration = () =>{
+    navigation('/moderation')
+}
+
   return (
     <div className="flex flex-row justify-start items-start w-full h-full">
         <img src={banner} alt="banner" className="w-[352px] h-[100vh] max-l:hidden"/>
@@ -17,7 +22,7 @@ const Main = () => {
                 <h1 className="h1-35-400-golos !text-[#0064DC] mb-[37px]">Войти в систему</h1>
                 <MainInput width="610px" height="59px" placehplder="Email"/>
                 <MainInput width="610px" height="59px" placehplder="Пароль"/>
-                <MainButton width="610px" height="59px"><p className="h1-30-400-golos !text-white max-fh:text-[20px]">Войти</p></MainButton>
+                <MainButton width="610px" height="59px"><p className="h1-30-400-golos !text-white max-fh:text-[20px]" onClick={routeOnModeration}>Войти</p></MainButton>
                 <div className="flex flex-row mt-[37px] justify-between">
                     <p className="h1-17-400-golos mr-[5px]">Нет аккакнта?</p>
                     <Link to="/registr" className="h1-17-400-golos !text-[#0064DC]">Регистрация</Link>

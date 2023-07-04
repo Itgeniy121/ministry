@@ -1,5 +1,9 @@
 import MainButton from "../../../../../components/UI/MainButton"
 const Company = () => {
+    const openModal = () =>{
+        let modalWindow = document.getElementById('modal')
+        modalWindow?.classList.add('active')
+    }
   return (
     <div className="w-[1271px] h-[345px] pt-[40px] px-[51px] flex flex-row justify-between items-start bg-white rounded-[10px] mt-[41px]">
         <div className="flex flex-col justify-start items-start">
@@ -10,7 +14,7 @@ const Company = () => {
             <MainButton width="510px" height="54px"><p className="h1-25-400-golos !text-white">Одобрить</p></MainButton>
             <div className="flex flex-row mt-[11px]">
                 <button className="w-[249px] h-[54px] rounded-[10px] bg-[#FFEAE8] mr-[12px]"><p className="h1-25-400-golos !text-[#EA5945]">Отклонить</p></button>
-                <button className="w-[249px] h-[54px] rounded-[10px] bg-[#F0F3FE]"><p className="h1-25-400-golos !text-[#466BE1]">Надо доработать</p></button>
+                <button className="w-[249px] h-[54px] rounded-[10px] bg-[#F0F3FE]" onClick={openModal}><p className="h1-25-400-golos !text-[#466BE1]">Надо доработать</p></button>
 
             </div>
         </div>
